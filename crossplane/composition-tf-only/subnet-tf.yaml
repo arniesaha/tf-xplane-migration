@@ -1,0 +1,10 @@
+apiVersion: aws.demo.upbound.io/v1alpha1
+kind: Subnet
+metadata:
+  name: subnet-tf
+spec:
+  id: tf-provider-vpc-migration
+  vpcName: tf-provider-vpc
+  compositionSelector:
+    matchLabels:
+      implementation: terraform
